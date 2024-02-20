@@ -368,7 +368,7 @@ nav ul li a:hover::after{
 
 .choose-us-div{
   background-color: #938b90;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 30px 30px 0px;
   background-image: url('../images/choose-us-bg.webp'); 
   background-size: cover; 
   background-position: center; 
