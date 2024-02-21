@@ -191,13 +191,21 @@
   
   }
 
+
+  .about-main-div{
+    margin:1% 5% 0 2% ;
+  
+  }
+  
 .about-us-div{
-  /* background-color: #610b3c; */
-  margin:1% 5% 0 2% ;
+  margin:0 0 10px 0 ;
   height: 75vh;
   background-image: url('../images/about-1.jpg');
   background-size: cover; 
 }
+
+
+
 
 .carousel-dots-right {
   position: absolute;
@@ -243,6 +251,38 @@
   }
 
 
+.about-description{
+  /* background-color: rgba(247, 9, 104, 0.1); */
+  background-color: rgba(234, 170, 193, 0.2);
+
+  padding: 2% 0 20px 5%;
+  width: 70%;
+
+}
 
 
-  
+.about-description h1{
+  margin: 0 0 20px 0;
+  font-size: 50px;
+  color: #ffffff;
+  color: rgba(122, 12, 52, 0.4);
+
+
+}
+
+.bg-about-div{
+  /* background-color: rgba(234, 170, 193, 0.2); */
+  background-color: rgba(247, 9, 104, 0.1);
+
+}
+
+.about-description p{
+  font-size: 16px;
+  color: #696868;
+  margin: 0px 0px 20px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 2em;
+  width: 80%;
+  letter-spacing: 1px;
+
+}
