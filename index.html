@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/848f8b6cbf.js" crossorigin="anonymous"></script>
 
 
-    <title>Document</title>
+    <title>MaxWell</title>
 </head>
 <body>
     <div class="nav-bar-div">
@@ -71,7 +71,7 @@
 
     <div class="main-body-div">
 
-        <div class="banner-div">
+        <div class="banner-div" id="banner1">
             <div class="banner-text">
                     <h2>ULTIMATE<br> DIGITAL EXPERIENCES</h2>
                     <h4>Comprehensive range of tech services and solutions that helps you get ahead <br>in the digital age. </h4>
@@ -81,6 +81,35 @@
             </div>
     
         </div>
+
+
+        <div class="banner-div" id="banner2">
+            <div class="banner-text">
+                    <h2>One-stop shop <br> for all things tech.</h2>
+                    <h4>Unleash your business potential, explore our services ! </h4>
+                    <button class="btn-about-us">
+                        <a href="#"><span>OUR SERVICES</span></a>
+                    </button>
+            </div>
+    
+        </div>
+
+        <div class="banner-div" id="banner3">
+            <div class="banner-text">
+                    <h2>Cyber <br> Security Services</h2>
+                    <h4>Securing your digital world 24/7. </h4>
+                    <button class="btn-about-us">
+                        <a href="#"><span>LEARN MORE</span></a>
+                    </button>
+            </div>
+    
+        </div>
+
+        <button class="arrow-btn" id="arrow-btn-left" onclick="showPrevBanner()" disabled><i class="fa-solid fa-circle-arrow-left"></i></button>
+        <button class="arrow-btn" id="arrow-btn-right" onclick="showNextBanner()"><i class="fa-solid fa-circle-arrow-right"></i></button>
+
+
+
 
         <div class="mission-div">
 
@@ -216,67 +245,36 @@
         <div class="integrated-tech-div">
 
             <div class="tech-content">
-                text
+                <h1>INTEGRATING <br>CUTTING-EDGE <br>TECHNOLOGIES</h1>
+                <p>Comprehensive range of IT services and solutions in Ksa that helps you get ahead in the digital age. Let's combine our high end technology and business-class services for your superior customer experience.</p>
 
             </div>
 
             <div class="tech-img">
-                img
+                <img src="./images/integrate-technologies.webp" alt="">
 
             </div>
         </div>
 
+
+        <div class="order-project-div">
+
+                <div  class="order-txt">
+                    <p>READY TO ORDER YOUR PROJECT ?</p>
+                </div>
+
+            <div class="order-btn">
+                <button class="btn-order-project"><a href="">REQUEST A QUOTE</a></button>
+            </div>
+        </div>
 
 
     </div>
 
 
     
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          // Define the count values
-          var countValues = [1000, 14, 300, 8]; // Add more values if needed
-      
-          // Loop through each count-item and initiate the animation
-          countValues.forEach(function (value, index) {
-            var countItem = document.getElementById("count-item-" + (index + 1));
-            if (countItem) {
-              animateCount(countItem, value);
-            }
-          });
-      
-          function animateCount(countItem, finalValue) {
-            var countElement = countItem.querySelector(".count");
-            var duration = 2000; // Duration of the animation in milliseconds
-            var frameRate = 30; // Number of frames per second
-            var increment = finalValue / (duration / 1000 * frameRate);
-      
-            var currentCount = 0;
-      
-            var interval = setInterval(function () {
-              currentCount += increment;
-              var formattedCount = Math.round(currentCount).toString().padStart(2, '0');
-              countElement.textContent = formattedCount;
-      
-              if (currentCount >= finalValue) {
-                clearInterval(interval);
-                // countElement.textContent = finalValue;
 
-                if(finalValue >=10){
-                    countElement.textContent = finalValue;
-
-                }
-                else{
-                    countElement.textContent = "0"+finalValue;
-
-                }
-              }
-            }, 1000 / frameRate);
-          }
-        });
-      </script>
-      
-
+    <script src="./js/index.js"></script>
     
 </body>
 </html>

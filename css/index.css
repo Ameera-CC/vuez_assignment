@@ -194,13 +194,15 @@ width: 100%;
 }
 
 .banner-div {
-  background-image: url('../images/home-bg-img.webp'); 
+  /* background-image: url('../images/banner1.webp');  */
   background-size: cover; 
   background-position: center; 
   height: 100vh;
   position: relative;
   margin-bottom: 50px;
   margin-right: 40px;
+  position: relative;
+  display: none;
 
 }
 
@@ -225,7 +227,7 @@ width: 100%;
   margin-bottom: 20px;
 }
 
-.btn-about-us, .btn-concept-view{
+.btn-about-us, .btn-concept-view, .btn-order-project{
   border: none;
   margin-top: 20px;
   padding: 20px 35px;
@@ -236,7 +238,7 @@ width: 100%;
   transition: scaleX 0.3s ease;
 }
 
-.btn-about-us a, .btn-concept-view a{
+.btn-about-us a, .btn-concept-view a, .btn-order-project a{
   color: white;
   letter-spacing: 3px;
   font-weight: bold;
@@ -458,4 +460,154 @@ to {
   opacity: 1;
 }
 }
+
+
+.integrated-tech-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 30px;
+  margin: 0px 30px 0px 0px;
+
+}
+
+.tech-content {
   
+  width: 60%;
+
+}
+
+.tech-content h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  color:#610b3c;
+  padding: 5% 10px 0px 10%;
+  line-height: 1.5em;
+
+  
+}
+
+.tech-content p{
+  text-align: justify;
+  padding: 20px 10px 20px 10%;
+  color:#610b3c;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 2em;
+  width: 80%;
+
+  
+  }
+
+.tech-img{
+  width: 40%;
+  margin:30px 30px 0px 0px;
+
+
+}
+
+.tech-img img{
+  width: 100%;
+  transition: transform 0.5s;
+
+
+
+}
+
+.tech-img img:hover{
+  transform: scale(1.1);
+}
+
+
+.order-project-div{
+  margin: 0px 30px 0px 0px;
+  display: flex;
+
+}
+
+.order-txt{
+  background-color:#940958;
+  width: 50%;
+  padding: 30px;
+  color: white;
+
+
+}
+
+
+.order-txt p{
+
+  margin: 30px 0px 0px 15%;
+
+
+}
+.order-btn{
+  width: 50%;
+  padding: 30px;
+  background-color:#9b1260;
+
+
+}
+
+.btn-order-project{
+  margin-left: 30%;
+}
+
+
+/* .arrow-btn {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+} */
+
+
+
+.arrow-btn {
+  position: absolute;
+  top: 70%;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+#arrow-btn-left {
+  background-color: #610b3c;
+  left: 120px;
+  
+}
+
+#arrow-btn-right {
+  background-color: #610b3c;
+  right: 60px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+
+}
+
+#banner1 {
+  background-image: url('../images/banner1.webp'); 
+}
+
+#banner2 {
+  background-image: url('../images/banner2.webp'); 
+}
+
+#banner3 {
+  background-image: url('../images/banner3.webp'); 
+}
+
+
+button i{
+  padding: 10px;
+}
