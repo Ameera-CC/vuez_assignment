@@ -285,12 +285,20 @@ display: flex;
 .mission-item img {
 width: 140px;
 height: 140px;
+transition: transform 0.5s;
+
+}
+
+.mission-item img:hover, .mission-item-txt:hover{
+  transform: scale(1.1);
 }
 
 
 .mission-item-txt{
 margin: 30px 10px 20px 10px;
 line-height: 30px;
+transition: transform 0.5s;
+
 
 }
 .mission-item div h3{
@@ -554,17 +562,6 @@ to {
   margin-left: 30%;
 }
 
-
-/* .arrow-btn {
-  position: absolute;
-  top: 50%;
-  right: 50px;
-  font-size: 24px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  color: white;
-} */
 
 
 

@@ -22,7 +22,7 @@
             <div>
                 <p class="email-id">WRITE : SUPPORT@AMEERACONCEPTS.COM</p>
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="#home-banner">HOME</a></li>
                     <li><a href="#">COMPANY</a></li>
                     <li><a href="#">SERVICES</a></li>
                     <li><a href="#">TECHNOLOGY</a></li>
@@ -75,7 +75,7 @@
             <div class="banner-text">
                     <h2>ULTIMATE<br> DIGITAL EXPERIENCES</h2>
                     <h4>Comprehensive range of tech services and solutions that helps you get ahead <br>in the digital age. </h4>
-                    <button class="btn-about-us">
+                    <button class="btn-about-us" id="btn-about">
                         <a href="#"><span>ABOUT US</span></a>
                     </button>
             </div>
@@ -272,7 +272,12 @@
     </div>
 
 
-    
+    <script>
+        document.getElementById("btn-about").addEventListener("click", function() {
+          window.location.href = "about-us.html";
+        });
+      </script>
+      
 
     <script src="./js/index.js"></script>
     
