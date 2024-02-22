@@ -1,0 +1,315 @@
+@media only screen and (max-width: 768px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+    }
+
+    nav a img{
+        height: 95px;
+        width: 95px;
+
+    }
+    
+    
+    nav div p{
+        display:none;
+        /* letter-spacing: 2px;
+        text-align: left;
+        padding: 0px 0px 10px 15px;
+        margin: 0px 80px 0px 25%;
+        color: #610b3c; */
+  
+    }
+
+    nav .fa-solid{
+        display: block;   /*showing the bar and close icon in mobiles*/
+        font-size: 30px;
+        cursor: pointer;
+        padding-right: 10px;
+
+    }
+
+
+    nav div ul {
+        background-color:#610b3c;
+        position: fixed;
+        top: 0;
+        /* right: 0; */
+        right:-200px; /*this will hide menu bar by default*/
+        width: 200px;
+        height: 100vh;
+        z-index: 2;  /*Nav bar in small screens*/
+        transition: right 0.5s;
+        text-align: left;
+    }
+
+    nav div ul li{
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        margin-top: 50px;
+    }
+
+    nav div ul li a{
+        color: white;
+    }
+
+
+    
+    nav div ul i {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        color: white;
+    }
+
+
+
+    nav div i {
+        position: absolute;
+        top: 35px;
+        right: 20px;
+    }
+
+    .main-body-div{
+        margin: 104px 30px 0px 90px;
+      
+    }
+
+    .banner-div {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        height: 80vh;
+
+      
+    }
+
+
+  
+
+    .banner-text{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        color: white;
+      
+    }
+
+    .banner-text h2{
+        font-size: 28px;
+    }
+      
+   
+      
+    .banner-text h4{
+        font-size: 15px;
+        /* margin-bottom: 50%; */
+    }
+
+    .arrow-btn {
+        top: 65%;
+    }
+
+
+
+    .btn-about-us{
+        text-align: center;
+        margin-top: 60%;
+
+    }
+
+
+
+    .mission-div{
+        margin: 30px 30px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;   
+    }
+
+
+
+
+    .veu-concept-div{
+        margin: 0px 0px 30px 0px;
+    }
+            
+    .vue-concept-heading{
+        /* display: inline-block; */
+        width: 100%;
+        background-color: #610b3c;
+        text-align: left;            
+            
+    }
+            
+    .vue-concept-heading p{
+        letter-spacing: 5px;
+        font-size: 18px;
+    }
+
+    .vue-concept-details{
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+    }
+
+   
+    .vue-img img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .vue-content h1{
+        width: 100%;
+        text-align: left;
+        font-size: 30px;
+    }
+                
+            
+    .vue-content{
+        width: 100%;
+        text-align: justify;
+        margin-top: 10px;
+    }
+                
+
+    .choose-us-div{
+        background-color: #938b90;
+        margin: 0px 0px 30px 0px;
+        background-image: url('../images/choose-us-bg.webp'); 
+        background-size: cover; 
+        background-position: center; 
+        
+        
+    }
+
+    .choose-us-desc{
+        background-color: #610b3c;
+        width: 100%;
+        /* text-align: justify; */
+        padding: 0px 10px 0px 10px;
+
+    }
+
+    .choose-heading{
+        color: #ffffff;
+        font-size: 40px;
+        /* text-align: left; */
+        padding: 20% 0px 20px 10%;
+        line-height: 1.5em;
+        
+    }
+
+    .choose-p{
+        line-height: 2em;
+        padding: 0px 20px 10% 10%;
+        width: 100%;
+        
+    }
+
+
+
+    .integrated-tech-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f5f5f5;
+        margin: 0px 0px 0px 0px;
+      
+    }
+      
+    .tech-content { 
+        width: 100%;
+    }
+      
+    .tech-content h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+        color:#610b3c;
+        padding: 2% 1% 0px 1%;
+        line-height: 1.5em;
+      
+        
+    }
+      
+    .tech-content p{
+        text-align: justify;
+        padding: 20px 10px 20px 5%;
+        font-size: 20px;
+        line-height: 2em;
+        width: 100%;
+        
+    }
+      
+    .order-project-div{
+        margin: 0px 0px 10px 0px;
+        display: flex;
+        flex-direction: column;
+      
+    }
+      
+    .order-txt{
+        width: 100%;
+    }
+      
+      
+    .order-txt p{
+      
+        margin: 20px 1% 0px 1%;
+        text-align: center;
+        line-height: 2em;
+    
+    }
+    .order-btn{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+
+
+    }
+      
+    .btn-order-project{
+        text-align: center;
+        margin: 5%;
+        padding: 20px 15px;
+    }
+      
+  
+
+
+    .carousel-dots-right {
+        position: absolute;
+        top: 20%;
+        left: 94%;
+        right: 0px;
+        transform: translateY(-50%);
+        }
+
+
+    .about-description{
+          
+        padding: 2% 0 20px 5%;
+        width: 100%;
+        margin-bottom: 10px;
+          
+    }
+          
+          
+    .about-description h1{
+        margin: 0 0 10px 0;
+        font-size: 30px;          
+    }
+        
+    .about-description p{
+        font-size: 16px;
+        margin: 0px 0px 10px 10px;
+        width: 95%;
+        letter-spacing: 1px;
+          
+    }
+          
+
+
+}

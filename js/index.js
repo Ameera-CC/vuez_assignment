@@ -78,3 +78,23 @@ document.addEventListener("DOMContentLoaded", function () {
     
         // Initial setup
         updateBannerVisibility();
+
+
+
+        //Mobile device nav bar menu
+
+        var sideMenu = document.getElementById('side-menu');
+
+        function openMenu(){
+            console.log('opentab')
+            sideMenu.style.right= '0';
+    
+        }
+    
+    
+        function closeMenu(){
+            console.log('close tab')
+            sideMenu.style.right= '-200px';
+    
+        }
+    

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,15 +22,16 @@
 
             <div>
                 <p class="email-id">WRITE : SUPPORT@AMEERACONCEPTS.COM</p>
-                <ul>
+                <ul id="side-menu">
                     <li><a href="#home-banner">HOME</a></li>
                     <li><a href="#">COMPANY</a></li>
                     <li><a href="#">SERVICES</a></li>
                     <li><a href="#">TECHNOLOGY</a></li>
                     <li><a href="#">INSIGHT</a></li>
-                    <li><a href="#">CONTACT</a></li>            
+                    <li><a href="#">CONTACT</a></li>   
+                    <i class="fa-solid fa-square-xmark" onclick="closeMenu()"></i>
                 </ul>    
-
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </div>
 
 
@@ -88,7 +90,7 @@
                     <h2>One-stop shop <br> for all things tech.</h2>
                     <h4>Unleash your business potential, explore our services ! </h4>
                     <button class="btn-about-us">
-                        <a href="#"><span>OUR SERVICES</span></a>
+                        <a href="#"><span> SERVICES</span></a>
                     </button>
             </div>
     
@@ -155,8 +157,6 @@
             <div class="vue-concept-details">
                 <div class="vue-img">
                     <img src="./images/vue-concept.webp" alt="">
-
-                    
                 </div>
 
                 <div class="vue-content">

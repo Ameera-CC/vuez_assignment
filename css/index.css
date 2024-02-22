@@ -17,6 +17,11 @@ text-decoration: none;
 background-color: #610b3c;
 
 }
+/* hiding the menu bar and close icon from desktop. it should display only in small screens */
+nav .fa-solid{
+  display: none;
+}
+
 nav{
   position: fixed;
   top: 0;
@@ -29,6 +34,10 @@ nav{
   margin-left: 30px;
   z-index: 100;
   
+}
+
+nav a{
+  margin-top: 10px;
 }
 
 nav div {
@@ -270,7 +279,6 @@ transform: scaleX(1); /* Scale the line to full width on hover */
 }
 
 .mission-div{
-
 margin: 30px 30px 30px 0px;
 display: flex;
 justify-content: space-around;
@@ -396,9 +404,8 @@ width: 50%;
 text-align: justify;
 padding: 0px 20px 0px 40px;
 
-
-
 }
+
 .choose-heading{
 color: #ffffff;
 font-size: 45px;
@@ -461,12 +468,12 @@ animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
-from {
-  opacity: 0;
-}
-to {
-  opacity: 1;
-}
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
 }
 
 
@@ -518,8 +525,6 @@ to {
 .tech-img img{
   width: 100%;
   transition: transform 0.5s;
-
-
 
 }
 
